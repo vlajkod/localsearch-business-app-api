@@ -13,7 +13,7 @@ morganRouter.use(
             return res.statusCode < httpCodes.BAD_REQUEST;
         },
         stream: {
-            write: message => {
+            write: (message) => {
                 logger.error(message);
             }
         }
@@ -26,7 +26,7 @@ morganRouter.use(
             return res.statusCode >= httpCodes.BAD_REQUEST;
         },
         stream: {
-            write: message => {
+            write: (message) => {
                 logger.info(message);
             }
         }

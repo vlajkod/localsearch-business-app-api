@@ -4,7 +4,7 @@
   "description": "Localsearch API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
+    "start": "nodemon --config nodemon.json",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "pretty": "prettier --write --config .prettierrc src/**/*.ts"
@@ -20,12 +20,14 @@
   },
   "homepage": "https://github.com/vlajkod/localsearch-business-app-api#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.6",
     "@types/jest": "^25.2.3",

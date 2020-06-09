@@ -16,16 +16,16 @@
             "@constants": [
                 "src/constants"
             ],
+            "@interfaces": [
+                "src/interfaces"
+            ],
             "@conf/*": [
                 "src/conf/*"
+            ],
+            "@controllers/*": [
+                "src/controllers/*"
             ]
-        },
-        "types": [
-            "node"
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ]
+        }
     },
     "include": [
         "src/**/*.ts",
