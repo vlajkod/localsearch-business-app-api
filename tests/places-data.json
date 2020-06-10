@@ -1,0 +1,309 @@
+[
+    {
+        "data": {
+            "displayed_what": "Casa Ferlin",
+            "displayed_where": "Stampfenbachstrasse 38, 8006 Zürich",
+            "opening_hours": {
+                "days": {
+                    "monday": [
+                        {
+                            "start": "11:30",
+                            "end": "14:00",
+                            "type": "OPEN"
+                        },
+                        {
+                            "start": "18:30",
+                            "end": "22:00",
+                            "type": "OPEN"
+                        }
+                    ],
+                    "tuesday": [
+                        {
+                            "start": "11:30",
+                            "end": "14:00",
+                            "type": "OPEN"
+                        },
+                        {
+                            "start": "18:30",
+                            "end": "22:00",
+                            "type": "OPEN"
+                        }
+                    ],
+                    "wednesday": [
+                        {
+                            "start": "11:30",
+                            "end": "14:00",
+                            "type": "OPEN"
+                        },
+                        {
+                            "start": "18:30",
+                            "end": "22:00",
+                            "type": "OPEN"
+                        }
+                    ],
+                    "thursday": [
+                        {
+                            "start": "11:30",
+                            "end": "14:00",
+                            "type": "OPEN"
+                        },
+                        {
+                            "start": "18:30",
+                            "end": "22:00",
+                            "type": "OPEN"
+                        }
+                    ],
+                    "friday": [
+                        {
+                            "start": "11:30",
+                            "end": "14:00",
+                            "type": "OPEN"
+                        },
+                        {
+                            "start": "18:30",
+                            "end": "22:00",
+                            "type": "OPEN"
+                        }
+                    ]
+                },
+                "closed_on_holidays": true,
+                "open_by_arrangement": false
+            },
+            "creation_date": "2012-09-18T13:53:10.018+02:00",
+            "modified_date": "2019-10-20T00:31:43.049+02:00",
+            "_update_process_type": "user_request"
+        },
+        "expectedData": {
+            "name": "Casa Ferlin",
+            "address": "Stampfenbachstrasse 38, 8006 Zürich",
+            "openingHours": [
+                {
+                    "startDay": "monday",
+                    "endDay": "friday",
+                    "hours": ["11:30 - 14:00", "18:30 - 22:00"]
+                },
+                {
+                    "startDay": "saturday",
+                    "endDay": null,
+                    "hours": []
+                },
+                {
+                    "startDay": "sunday",
+                    "endDay": null,
+                    "hours": []
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "displayed_what": "Le Café du Marché",
+            "displayed_where": "Rue de Conthey 17, 1950 Sion",
+            "opening_hours": {
+                "days": {
+                    "tuesday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "wednesday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "thursday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "friday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "saturday": [
+                      {
+                        "start": "18:00",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "sunday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      }
+                    ]
+                  },
+                "closed_on_holidays": true,
+                "open_by_arrangement": false
+            },
+            "creation_date": "2012-09-18T13:53:10.018+02:00",
+            "modified_date": "2019-10-20T00:31:43.049+02:00",
+            "_update_process_type": "user_request"
+        },
+        "expectedData": {
+            "name": "Le Café du Marché",
+            "address": "Rue de Conthey 17, 1950 Sion",
+            "openingHours": [
+                {
+                    "startDay": "monday",
+                    "endDay": null,
+                    "hours": []
+                },
+                {
+                    "startDay": "tuesday",
+                    "endDay": "friday",
+                    "hours": ["11:30 - 15:00", "18:30 - 00:00"]
+                },
+                {
+                    "startDay": "saturday",
+                    "endDay": null,
+                    "hours": ["18:00 - 00:00"]
+                },
+                {
+                    "startDay": "sunday",
+                    "endDay": null,
+                    "hours": ["11:30 - 15:00"]
+                }
+            ]
+        }
+    },
+    {
+        "data": {
+            "displayed_what": "Le Café du Marché",
+            "displayed_where": "Rue de Conthey 17, 1950 Sion",
+            "opening_hours": {
+                "days": {
+                    "tuesday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "wednesday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "thursday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "friday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      },
+                      {
+                        "start": "18:30",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "saturday": [
+                      {
+                        "start": "18:00",
+                        "end": "00:00",
+                        "type": "OPEN"
+                      }
+                    ],
+                    "sunday": [
+                      {
+                        "start": "11:30",
+                        "end": "15:00",
+                        "type": "OPEN"
+                      }
+                    ]
+                  },
+                "closed_on_holidays": true,
+                "open_by_arrangement": false
+            },
+            "creation_date": "2012-09-18T13:53:10.018+02:00",
+            "modified_date": "2019-10-20T00:31:43.049+02:00",
+            "_update_process_type": "user_request"
+        },
+        "expectedData": {
+            "name": "Le Café du Marché",
+            "address": "Rue de Conthey 17, 1950 Sion",
+            "openingHours": [
+                {
+                    "startDay": "monday",
+                    "endDay": null,
+                    "hours": []
+                },
+                {
+                    "startDay": "tuesday",
+                    "endDay": null,
+                    "hours": ["11:30 - 15:00", "18:30 - 00:00"]
+                },
+                {
+                    "startDay": "wednesday",
+                    "endDay": null,
+                    "hours": ["11:30 - 15:00"]
+                },
+                {
+                    "startDay": "thursday",
+                    "endDay": "friday",
+                    "hours": ["11:30 - 15:00", "18:30 - 00:00"]
+                },
+                {
+                    "startDay": "saturday",
+                    "endDay": null,
+                    "hours": ["18:00 - 00:00"]
+                },
+                {
+                    "startDay": "sunday",
+                    "endDay": null,
+                    "hours": ["11:30 - 15:00"]
+                }
+            ]
+        }
+    }
+]

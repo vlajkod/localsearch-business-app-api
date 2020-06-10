@@ -12,6 +12,7 @@
         "strict": true,
         "target": "es6",
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "paths": {
             "@constants": [
                 "src/constants"
@@ -24,7 +25,13 @@
             ],
             "@controllers/*": [
                 "src/controllers/*"
-            ]
+            ],
+            "@services/*": [
+                "src/services/*"
+            ],
+            "@tests/*": [
+                "tests/*"
+            ],
         }
     },
     "include": [
