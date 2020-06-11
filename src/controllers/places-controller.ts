@@ -1,13 +1,11 @@
-import Router, { Request, Response } from 'express';
+import Router, { Request, Response, NextFunction } from 'express';
 
 import { httpCodes } from '@constants';
 import { IPlace } from '@interfaces';
 import httpAdapter from '@conf/http-adapter';
-import logger from '@conf/logger';
 import placeService from '@services/places-service';
 
 const router = Router();
-const PLACES_API_URL = 'https://storage.googleapis.com/coding-session-rest-api';
 
 router.get('/', (req: Request, res: Response) => {
     const data: IPlace[] = [
@@ -25,19 +23,16 @@ router.get('/', (req: Request, res: Response) => {
     });
 });
 
-router.get('/:reference', async (req: Request, res: Response) => {
+router.get('/:reference', async (req: Request, res: Response, next: NextFunction) => {
     const { reference } = req.params;
     try {
-        const response = await httpAdapter.get(`${PLACES_API_URL}/${reference}`);
+        const response = await httpAdapter.get(`${process.env.PLACES_API_URL}/${reference}`);
         const data = placeService.getFormatedPlaceData(response);
         res.status(httpCodes.OK).json({
             data
         });
     } catch (err) {
-        logger.error(err.message, err);
-        res.status(httpCodes.BAD_REQUEST).json({
-            message: err.message
-        });
+        next(err);
     }
 });
 

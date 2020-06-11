@@ -9,5 +9,6 @@ module.exports = {
         "^@(services)/(.*)$": "<rootDir>/src/services/$2",
         "^@(constants)$": "<rootDir>/src/constants",
         "^@(interfaces)$": "<rootDir>/src/interfaces",
+        "^@(exceptions)$": "<rootDir>/src/exceptions",
     },
 };

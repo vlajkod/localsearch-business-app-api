@@ -17,22 +17,22 @@ describe('Place service', () => {
     });
 
     it('checks if name has right vaule', () => {
-        const { data, expectedData } =  fakeData[0];
+        const { data, expectedData } = fakeData[0];
         const place = placeService.getFormatedPlaceData(data);
         expect(place.name).toBe(expectedData.name);
     });
-    
+
     it('checks if address has right vaule', () => {
-        const { data, expectedData } =  fakeData[0];
+        const { data, expectedData } = fakeData[0];
         const place = placeService.getFormatedPlaceData(data);
         expect(place.address).toBe(expectedData.address);
     });
 
     it('checks if openingHours has right format', () => {
         fakeData.forEach((fakePlace: any) => {
-            const { data, expectedData } =  fakePlace;
+            const { data, expectedData } = fakePlace;
             const place = placeService.getFormatedPlaceData(data);
-            expect(place.openingHours).toStrictEqual(expectedData.openingHours); 
+            expect(place.openingHours).toStrictEqual(expectedData.openingHours);
         });
     });
 
@@ -41,7 +41,7 @@ describe('Place service', () => {
         const { days } = data.opening_hours;
         const placeHoursFormatted = placeService.formatHours(days.monday);
         const formatedHours = expectedData.openingHours.find((item: any) => item.startDay === 'monday');
-        expect(placeHoursFormatted).toStrictEqual(formatedHours.hours);    
+        expect(placeHoursFormatted).toStrictEqual(formatedHours.hours);
     });
 
     it('check if fn params is formats hours to be readable', () => {
