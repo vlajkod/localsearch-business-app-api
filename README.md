@@ -3,7 +3,6 @@
 ## Prerequisites
 
 Node.js https://nodejs.org/en/download/
-
 Git https://git-scm.com/downloads
 
 
@@ -25,7 +24,8 @@ Start dev mode
 $ npm run dev
 ```
 
-Application is up and running on port 8000
+Application is up and running on port 8000 
+
 Configuration of the application can be changed in ENV files
 
 Run tests
