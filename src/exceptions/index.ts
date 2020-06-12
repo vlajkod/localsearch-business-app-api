@@ -21,7 +21,7 @@ const NotFound = (message = 'Not Found'): IException => ({
 const PlaceDataException = (message: string): IException => ({
     code: httpCodes.PLACE_DATA_EXCEPTION,
     message,
-    name: 'Missing Place Field'
+    name: 'Place Data Exception'
 });
 
 export { BadRequest, NotFound, PlaceDataException };

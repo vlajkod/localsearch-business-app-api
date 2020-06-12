@@ -16,13 +16,13 @@ describe('Place service', () => {
         expect(place).toHaveProperty('address');
     });
 
-    it('checks if name has right vaule', () => {
+    it('checks if name has right value', () => {
         const { data, expectedData } = fakeData[0];
         const place = placeService.getFormatedPlaceData(data);
         expect(place.name).toBe(expectedData.name);
     });
 
-    it('checks if address has right vaule', () => {
+    it('checks if address has right value', () => {
         const { data, expectedData } = fakeData[0];
         const place = placeService.getFormatedPlaceData(data);
         expect(place.address).toBe(expectedData.address);
@@ -36,7 +36,7 @@ describe('Place service', () => {
         });
     });
 
-    it('formats hours to be readable', () => {
+    it('formats the hours to be readable', () => {
         const { data, expectedData } = fakeData[0];
         const { days } = data.opening_hours;
         const placeHoursFormatted = placeService.formatHours(days.monday);
@@ -44,7 +44,7 @@ describe('Place service', () => {
         expect(placeHoursFormatted).toStrictEqual(formatedHours.hours);
     });
 
-    it('check if fn params is formats hours to be readable', () => {
+    it('if formatHours does not have parameters, should return empty array', () => {
         const placeHoursFormatted = placeService.formatHours(undefined);
         expect(placeHoursFormatted).toStrictEqual([]);
     });

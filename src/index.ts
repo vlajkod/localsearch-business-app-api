@@ -4,7 +4,6 @@ dotenv.config({
     path: `./env/${process.env.NODE_ENV}.env`
 });
 
-dotenv.config();
 import app from './app';
 import logger from '@conf/logger';
 
